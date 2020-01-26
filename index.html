@@ -33,11 +33,13 @@
 <body>
   <main class="ui container" id="main">
   <h1 class="ui header violet huge">Winter's Triangle Tracker</h1>
+  <form>
   <h3 class="ui header">Enter three numbers to see what kind of triangle they make!</h2>
-    <input type="number" required aria-required="true" max ="180" placeholder="First Number">
-    <input type="number" required aria-required="true" max ="180" placeholder="Second Number">
-    <input type="number" required aria-required="true" max ="180" placeholder="Third Number">
-
+    <input type="number" required aria-required="true" max ="180" placeholder="First Number" id="num1">
+    <input type="number" required aria-required="true" max ="180" placeholder="Second Number" id="num2">
+    <input type="number" required aria-required="true" max ="180" placeholder="Third Number" id="num3">
+    <button id="submit" type="submit">Submit</button>
+  </form>
     <div class="hidden" id="results">
       <div id="isosceles">Your numbers make an isosceles triangle! Nice work!</div>
       <div id="equilateral">Your numbers make an equilateral triangle! Nice work!</div>
