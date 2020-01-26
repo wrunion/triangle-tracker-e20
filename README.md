@@ -1,17 +1,15 @@
-# Epicodus Boilerplate
+# Winter's Triangle Tracker
 
 #### Description
-_Epicodus intro student projects all use the same file tree and technology, so here they are, all linked together in one place for your convenience._ 
+_A simple app where a user can enter three numbers and see what kind of triangle they make! An exercise in branching for Epicodus JavaScript/React track._ 
 
-#### Instructions
+#### To Use
 
-Clone this repo, open it up, and enjoy!
-
-_Note: there's also a README template included, so just delete this one, include your info on that one, and you're all set!_
+Visit the github page [here](#)
 
 #### Bugs
 
-None known. Contact me if you have issues: winterrunion@gmail.com
+None known. Contact me if you have issues: winterrunion@gmail.com.
 
 #### License
 
