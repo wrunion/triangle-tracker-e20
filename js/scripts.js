@@ -1,4 +1,5 @@
 //Business Logic
+//Change this function name to "validateTriangle"
 function checkTriangle(num1, num2, num3) {
 
   let condition1;
@@ -22,7 +23,6 @@ function checkTriangle(num1, num2, num3) {
   } else {
     return false;
   }
-  
 }
 
 function checkInput(num1, num2, num3) {
@@ -30,6 +30,19 @@ function checkInput(num1, num2, num3) {
     return true;
   } else {
     return false;
+  }
+}
+
+function checkTriangleType(num1, num2, num3) {
+  // event.preventDefault();
+  if (num1 === num2 && num2 === num3) {
+  return 'Equilateral'; 
+  } else if (num1 === num2 || num2 === num3 || num1 === num3) {
+    return 'Isosceles';
+  } else if (num1 !== num2 && num2 !== num3 && num1 !==num3) {
+    return 'Scalene';
+  } else {
+    return "Those numbers don't make a triangle. Please try again.";
   }
 }
 
@@ -47,17 +60,12 @@ $(document).ready(function() {
     let isValidInput = checkInput(num1, num2, num3);
     let isTriangle = checkTriangle(num1, num2, num3);
 
-    if (isValidInput && isTriangle) {
-      if (num1 === num2 && num2 === num3) {
-      alert('Equilateral'); 
-      } else if (num1 === num2 || num2 === num3 || num1 === num3) {
-        alert('Isosceles');
-      } else if (num1 !== num2 && num2 !== num3 && num1 !==num3) {
-        alert('Scalene');
-      } else {
-        alert("Your numbers don't make a triangle. Please try again");
-      }
-    }
+    
+  
+
+    let triangleType = checkTriangleType(num1, num2, num3);
+    alert(triangleType);
+
     
     event.preventDefault();
   });
