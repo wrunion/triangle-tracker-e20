@@ -1,8 +1,10 @@
-# Winter's Triangle Tracker
+## Winter's Triangle Tracker
 
-#### By _**Winter A. Runion**, 1.28.2020_
+###### Enter three numbers to learn what type of triangle they make.
+
+###### By _**Winter A. Runion**, 1.28.2020_
+
 ___
-
 
 #### Description
 _A simple app where a user can enter three numbers and see what kind of triangle they make. An [exercise in branching](https://www.learnhowtoprogram.com/intro-to-programming-part-time-react-track/jquery-branching-and-looping/practice-triangle-tracker-47ab95ec-f930-4077-a89e-25fcf9e96be3) for Epicodus' JavaScript/React track._ 
@@ -13,7 +15,7 @@ _A simple app where a user can enter three numbers and see what kind of triangle
 
 #### To Use
 
-Check out the github page [here](#). Enjoy!
+[Here's the github page](https://wrunion.github.io/triangle-tracker-e20/). Enjoy!
 
 #### Support and Contact
 
