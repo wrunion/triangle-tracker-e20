@@ -1,8 +1,8 @@
-## Winter's Triangle Tracker
+# Winter's Triangle Tracker
 
-###### Enter three numbers to learn what type of triangle they make.
+#### Enter three numbers to learn what type of triangle they make.
 
-###### By _**Winter A. Runion**, 1.28.2020_
+#### By _**Winter A. Runion**, 1.28.2020_
 
 ___
 
