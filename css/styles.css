@@ -1,9 +1,10 @@
 body {
   text-align: center;
+  background-color: #F0F0F0;
 }
 
 #main {
-  margin-top: 5em;
+  margin-top: 15em;
 }
 
 .hidden {
@@ -12,4 +13,12 @@ body {
 
 input {
   margin: .3em;
+}
+
+button#submit {
+  margin: 2.5em;
+}
+
+#input-buttons {
+  margin-top: 2em;
 }
