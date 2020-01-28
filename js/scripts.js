@@ -50,24 +50,24 @@ function checkTriangleType(num1, num2, num3) {
 //UI Logic
 $(document).ready(function() {
   $("button#submit").on("click", function() {
-    //Get the inputted user values and assign them to variables
-    let num1 = parseInt($("#num1").val());
-    let num2 = parseInt($("#num2").val());
-    let num3 = parseInt($("#num3").val());
+    //Get inputted values and parse to numbers.
+    let num1 = parseFloat($("#num1").val());
+    let num2 = parseFloat($("#num2").val());
+    let num3 = parseFloat($("#num3").val());
+
     //console.log(num1, num2, num3);
     
-    //Check to make sure that the user actually entered positive integers, and that those integers form a valid triangle, and assign those booleans to variables
+    //Check to make sure that the user actually entered positive integers, and that those integers form a valid triangle. 
     let isValidInput = checkInput(num1, num2, num3);
     let isTriangle = checkTriangle(num1, num2, num3);
 
-    
-  
-
-    let triangleType = checkTriangleType(num1, num2, num3);
-    alert(triangleType);
-
-    
+    //If the triangle is valid, find out what kind of triangle it is, and alert the result to the user.  
+    if (isValidInput && isTriangle) {
+      let triangleType = checkTriangleType(num1, num2, num3);
+      alert(`You made an ${triangleType.toLowerCase()} triangle!`);
+    } else {
+      alert(`Those numbers don't make a triangle. Please try again.`);
+    }   
     event.preventDefault();
   });
-
 });
